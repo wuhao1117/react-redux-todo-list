@@ -1,0 +1,27 @@
+{
+  "name": "react-redux-todo-list",
+  "version": "0.0.0",
+  "description": "A simple todo list made of React and Redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuhao1117/react-redux-todo-list.git"
+  },
+  "author": "Hao Wu <wuhao1117@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuhao1117/react-redux-todo-list/issues"
+  },
+  "homepage": "https://github.com/wuhao1117/react-redux-todo-list#readme",
+  "dependencies": {
+    "react": "^15.4.2",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
+}
