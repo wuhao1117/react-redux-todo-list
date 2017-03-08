@@ -1,16 +1,14 @@
 const path = require('path');
 
 const rootDir = path.resolve(__dirname);
-const SRC_DIR = path.join(rootDir, 'src');
-const JS_DIR = path.join(SRC_DIR, 'js');
-const buildDir = './build';
 
 const config = {
+  context: path.resolve(__dirname, 'src'),
   entry: {
-      app: path.join(JS_DIR, 'index.js')
+      app: './js/index.js'
   },
   output: {
-      path: buildDir,
+      path: path.resolve(__dirname, 'dev'),
       filename: '[name].js'
   },
   module: {
@@ -21,6 +19,13 @@ const config = {
             path.resolve(__dirname, 'node_modules')
         ],
       }]
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json']
+  },
+  devServer: {
+    contentBase: [path.join(__dirname, 'build'), path.join(__dirname, 'dev')],
+    watchContentBase: true
   }
 };
 
